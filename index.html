@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>whastas</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="slider">
+            <div class="slider-bg">
+                <img src="image/profile1.png.jpg" class="bg-blur active">
+                <img src="image/profile2.png.jpg" class="bg-blur">
+                <img src="image/profile3.png.jpg" class="bg-blur">
+                <img src="image/profile4.png.jpg" class="bg-blur"> 
+                <img src="image/profile5.png" class="bg-blur"> 
+            </div>
+
+            <img src="image/profile1.png.jpg" class="slide active" alt="Journal Slider 1">
+            <img src="image/profile2.png.jpg" class="slide" alt="Journal Slider 2">
+            <img src="image/profile3.png.jpg" class="slide" alt="Journal Slider 3">
+            <img src="image/profile4.png.jpg" class="slide" alt="Journal Slider 4"> 
+            .3<img src="image/profile5.png" class="slide" alt="Journal Slider 5">
+        </div>
+
+        <div class="overlay">
+            <h1>PORTFOLIO NI DAN</h1>
+            <p>LE&bull; IS &bull; CHE</p>
+            <button id="themeBtn">pindutin mo para dumilim or lumiwanag</button>
+        </div>
+    </header>
+
+    <main class="container">
+        
+        <section class="profile">
+            <div class="profile-img-container">
+                <img src="image/dp.png.jpg" alt="Profile Picture">
+            </div>
+            <div class="profile-text">
+                <h2>portfolio ko para di ako palamunin</h2>
+                <p>whasdanar</p>
+            </div>
+        </section>
+
+        <section class="projects-gallery">
+            <h2 class="section-title">Ghost project</h2>
+            <div id="projectGrid" class="project-grid"></div>
+        </section>
+
+        <section class="search-section">
+            <input type="text" id="search" placeholder="Search notes or projects...">
+        </section>
+
+        <div class="cards-grid">
+            <div class="card">
+                <h2>Notes ko</h2>
+                <textarea id="notes" placeholder="Write your notes here..."></textarea>
+                <button onclick="saveNotes()">Save</button>
+            </div>
+
+            <div class="card">
+                <h2>mga Projects</h2>
+                <div class="input-group">
+                    <input type="text" id="projectTitle" placeholder="Project Title...">
+                    <input type="text" id="projectLink" placeholder="Project Link (URL)..." value="#">
+                    <textarea id="projectDesc" placeholder="Describe your project here..."></textarea>
+                </div>
+                <button onclick="addProject()">Save Project</button>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 @Whasdanarkaba</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
